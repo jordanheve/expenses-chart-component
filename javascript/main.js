@@ -2,7 +2,7 @@ const container = document.querySelector('.chart__container')
 
 let values = []
 // use fetch instead import for compatibility isues with firefox
-fetch("..expenses-chart-component/data.json")
+fetch("../expenses-chart-component/data.json")
     .then(response => response.json())
     .then(data => {
         data.forEach(data => values.push(data.amount))
